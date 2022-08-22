@@ -10,7 +10,11 @@ apt-get install unzip -y
 echo "Baixando e copiando os arquivos necessários... Aguarde"
 
 cd /tmp
+mkdir site
+cd /site
 wget https://github.com/brunoflma/diolinuxexp/raw/main/apache_iac/main.zip
 unzip main.zip
-cd main
 cp -R * /var/www/html/
+
+echo "Procedimento concluído no dia:"
+date
